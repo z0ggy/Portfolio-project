@@ -29,5 +29,30 @@
 }
 
 .card {
-    display: none;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(190deg, rgba(22, 155, 98, .5) 0, rgba(22, 155, 98, .8) 32%,rgba(255,255,255,.5) 33%, rgba(255,255,255,.8) 66%,rgba(255, 130, 0, .5) 67%, rgba(255, 130, 0, .8) 99%);
+
+    /* inherit radius from .card-wrapper */
+    border-radius: inherit;
+
+    /* default flex direction is row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* make some space between elements */
+    justify-content: space-between;
+}
+
+.card-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* object-fit: cover; use this if picture is not square */
+    margin-top: 15px;
+    border: 2px solid #fff;
+    padding: 8px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .8);
+
 }
