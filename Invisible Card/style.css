@@ -104,11 +104,12 @@
 /* lower ::first-letter of i paragraph and upper last letter */
 .card-paragraph i:first-child {
     top: -10%;
+    margin-right :5px;
 }
 
 .card-paragraph i:last-child {
     bottom: -10%;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .card-icons {
@@ -162,4 +163,17 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
     cursor: pointer;
 }
+
+@media screen and (max-width: 1280px) {
+    .card-wrapper {
+        width: 45%;
+    }   
+}
+
+@media screen and (max-width: 736px) {
+    .card-wrapper {
+        width: 100%;
+    }   
+}
+
 
